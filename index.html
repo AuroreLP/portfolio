@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Aurore Le Perff</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/override-bootstrap.css" />
+  </head>
+  <body data-bs-spy="scroll">
+    <div class="container-fluid bg-light">
+      <!-- Début Navbar -->
+      <nav class="navbar navbar-expand-lg sticky-top bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#home">
+            <img
+              src="assets/img/logo AL dark.png"
+              alt="logo"
+              width="60"
+              height="60"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <div
+              class="d-flex w-100 justify-content-between align-items-center"
+            >
+              <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projets">Mes projets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about" aria-disabled="true"
+                    >A propos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact" aria-disabled="true"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex">
+            <a
+              class="nav-link"
+              href="https://github.com/AuroreLP"
+              target="_blank"
+            >
+              <i class="bi bi-github icon-large"></i>
+            </a>
+            <a
+              class="nav-link ms-3"
+              href="https://www.linkedin.com/in/aurore-le-perff/"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin icon-large"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Fin Navbar -->
+      <!-- Début Hero -->
+      <section id="home" class="container-fluid p-0 m-0">
+        <div
+          class="text-center bg-image position-relative"
+          style="
+            background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+          "
+        >
+            <div
+            class="mask position-absolute top-50 start-50 translate-middle rounded-3"
+            style="background-color: rgba(0, 0, 0, 0.6); width: 80%; height: 80%"
+            >
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white me-5 ms-5 text-center">
+                <h1 class="mb-3 text-light">Développeuse Web</h1>
+                <h4 class="mb-3">
+                    A la recherche d'une alternance, je m'appelle Aurore et je suis
+                    basée à Compiègne.
+                </h4>
+                <a
+                    data-mdb-ripple-init
+                    class="btn btn-outline-primary btn-lg"
+                    href="#contact"
+                    role="button"
+                    >Contactez-moi!</a
+                >
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Fin Hero -->
+      <!-- Début Projects -->
+      <div class="row mb-5" id="projets">
+        <div class="col-lg-12 text-center">
+          <h2 class="mt-5 mb-4">Mes projets</h2>
+        </div>
+        <div class="accordion" id="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                Projet #1 - Memory Game
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body mb-4 w-100" style="max-width: 70%">
+                <div class="row g-0">
+                  <div class="col-md-5">
+                    <img
+                      src="assets/img/jeu de mémoire.png"
+                      class="img-fluid rounded-3"
+                      alt="image jeu de mémoire"
+                    />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="accordion-body">
+                      <h5 class="card-title">Memory Game</h5>
+                      <ul class="card-text">
+                        <li>Objectif: Créer un jeu de mémoire</li>
+                        <li>Langages utilisés: HTML, CSS, JavaScript</li>
+                        <li>Fonctionnalités:</li>
+                        <li>
+                          Code Github:
+                          <a href="https://github.com/alepe1/portfolio"
+                            >https://github.com/alepe1/portfolio</a
+                          >
+                        </li>
+                        <li>
+                          Lien URL:
+                          <a
+                            href="https://aurorelp.github.io/MemoryGame/"
+                            target="_blank"
+                            >MemoryGame</a
+                          >
+                        </li>
+                      </ul>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >Mis à jour le 01-08-2025</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Projet #2 - CheckIt
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body mb-4 w-100" style="max-width: 70%">
+                <div class="row g-0">
+                  <div class="col-md-5">
+                    <img
+                      src="assets/img/jeu de mémoire.png"
+                      class="img-fluid rounded-3"
+                      alt="image jeu de mémoire"
+                      style="width: 80%; height: 100%"
+                    />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="card-title">Memory Game</h5>
+                      <ul class="card-text">
+                        <li>Objectif: Créer un jeu de mémoire</li>
+                        <li>Langages utilisés: HTML, CSS, JavaScript</li>
+                        <li>Fonctionnalités:</li>
+                        <li>
+                          Code Github:
+                          <a href="https://github.com/alepe1/portfolio"
+                            >https://github.com/alepe1/portfolio</a
+                          >
+                        </li>
+                        <li>
+                          Lien URL:
+                          <a
+                            href="https://aurorelp.github.io/MemoryGame/"
+                            target="_blank"
+                            >MemoryGame</a
+                          >
+                        </li>
+                      </ul>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >Mis à jour le 01-08-2025</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Projet #3 - CodeByAurore
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body mb-4 w-100" style="max-width: 70%">
+                <div class="row g-0">
+                  <div class="col-md-5">
+                    <img
+                      src="assets/img/jeu de mémoire.png"
+                      class="img-fluid rounded-3"
+                      alt="image jeu de mémoire"
+                      style="width: 80%; height: 100%"
+                    />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="card-title">CodeByAurore</h5>
+                      <ul class="card-text">
+                        <li>
+                          Objectif: Proposer un blog qui présente mes
+                          compétences tout en créant une communauté
+                        </li>
+                        <li>
+                          Langages utilisés: PHP, Symfony, Docker, MySQL,
+                          MongoDB
+                        </li>
+                        <li>Fonctionnalités:</li>
+                        <li>
+                          Code Github:
+                          <a href="..."></a>
+                        </li>
+                        <li>
+                          Lien URL:
+                          <a href="..." target="_blank"></a>
+                        </li>
+                      </ul>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >Mis à jour le 01-08-2025</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Projects -->
+      <!-- Début About -->
+      <section
+        class="text-white py-5 bg-green-dark container-fluid m-o"
+        id="about"
+      >
+        <div class="col-lg-12 text-center">
+          <h2 class="mb-4">Qui suis-je?</h2>
+        </div>
+        <div class="row align-items-center flex-column flex-md-row">
+          <!-- Colonne gauche : photo -->
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center mb-4 mb-md-0"
+          >
+            <div
+              class="rounded-circle overflow-hidden top-50 start-50"
+              style="width: 200px; height: 200px"
+            >
+              <img
+                src="https://www.shutterstock.com/shutterstock/photos/2488695785/display_1500/stock-photo-api-application-programming-interface-concept-a-programmer-types-on-a-laptop-interacting-with-2488695785.jpg"
+                alt="Photo de Aurore, développeuse web"
+                class="img-fluid h-100 w-100 object-fit-cover"
+              />
+            </div>
+          </div>
+          <!-- Colonne droite : texte + bouton -->
+          <div class="col-md-8 text-center text-md-start me-auto">
+            <p style="max-width: 80%">
+              Je suis développeuse web passionnée par la création de sites
+              modernes, accessibles et performants. Mon parcours m’a permis de
+              travailler avec plusieurs technologies telles que HTML, CSS,
+              JavaScript, PHP, Symfony, MySQL et plus encore.
+            </p>
+            <a
+              href="CV_Aurore.pdf"
+              class="btn btn-outline-primary mt-3"
+              download
+              >Télécharger mon CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Fin About -->
+      <!-- Début Contact -->
+      <div class="container-fluid mb-5" id="contact">
+        <div class="col-lg-12 text-center">
+          <h2 class="mt-5 mb-4">Contactez-moi!</h2>
+        </div>
+
+        <form action="https://formsubmit.co/aleperff@gmail.com" method="POST">
+          <fieldset>
+            <!-- Prénom / Nom -->
+            <div class="row mb-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nom"
+                  name="nom"
+                  required
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Prénom"
+                  name="prenom"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <div class="col">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div id="emailHelp" class="form-text">
+                Ne vous inquiétez pas, je ne partagerai jamais vos informations
+              </div>
+            </div>
+
+            <!-- Objet -->
+            <div class="form-group mb-3">
+              <select id="selection" class="form-control" name="objet" required>
+                <option value="">Choisissez un objet</option>
+                <option value="infos">Demande d'informations</option>
+                <option value="collab">Proposition de collaboration</option>
+                <option value="recruteur">
+                  Je suis un recruteur et votre profil m'intéresse
+                </option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group mb-3">
+              <textarea
+                class="form-control"
+                id="bio"
+                rows="3"
+                name="message"
+                placeholder="Entrez votre message"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Anti-spam + redirection -->
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://ton-nom.github.io/merci.html"
+            />
+
+            <!-- Envoyer -->
+            <button type="submit" class="btn btn-primary mt-3">Envoyer</button>
+          </fieldset>
+        </form>
+      </div>
+      <!-- Fin Contact -->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
