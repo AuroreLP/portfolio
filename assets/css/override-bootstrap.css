@@ -60,12 +60,22 @@ body {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
 h1,
 h2,
 h3,
 p,
 li {
   font-family: "Space Mono", monospace;
+  color: #2b4743;
+}
+
+html {
+  scroll-padding-top: 80px; /* ou la hauteur exacte de ta navbar */
 }
 
 .nav-link {
@@ -77,12 +87,6 @@ li {
 
 .nav-link:hover {
   color: #38d6c2;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.nav-link.active {
-  color: #2b4743;
   font-weight: 700;
   font-size: 1.1rem;
 }
@@ -110,6 +114,14 @@ li {
 .bg-green-dark h3 {
   color: #efe4d5; /* clair sur fond foncé */
 }
+
+.equal-width-btns a {
+  flex: 0 0 auto;
+  min-width: 180px;
+  text-align: center;
+  white-space: nowrap;
+}
+
 
 .card-header {
   font-family: "Space Mono", monospace;
@@ -144,3 +156,14 @@ li {
   background-color: var(--success); /* exemple : turquoise */
   color: #efe4d5;
 }
+
+.icon-large {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
