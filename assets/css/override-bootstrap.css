@@ -95,6 +95,17 @@ html {
   font-size: 25px;
 }
 
+a {
+  color: #efe4d5;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #38d6c2;
+}
+
+
 .bg-green-dark {
   background-color: #2b4743;
 }
